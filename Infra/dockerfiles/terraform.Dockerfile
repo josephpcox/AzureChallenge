@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-# Install ddependencies for Terraform.
+# Install dependencies for Terraform.
 RUN apt update \
     && apt install -y wget \
     && apt install -y unzip \
@@ -17,3 +17,6 @@ RUN mv terraform /usr/local/bin/
 
 # Verify that Terraform is installed by checking its version:
 RUN terraform version
+
+
+
